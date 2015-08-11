@@ -21,8 +21,8 @@ var (
 	flagListen      = flag.String("listen", ":4443", "socket address to listen to")
 	flagBackend     = flag.String("backend", "localhost:8080", "backend server to proxy")
 	flagHost        = flag.String("host", "localhost", "hostname for certificate")
-	flagSSLCertPath = flag.String("cert", "", "SSL PEM certificate file path, defaults to a new self-signed certificate")
-	flagSSLKeyPath  = flag.String("key", "", "SSL PEM certificate key file path")
+	flagSSLCertPath = flag.String("cert", "", "path to SSL PEM certificate file; defaults to a generated self-signed cert")
+	flagSSLKeyPath  = flag.String("key", "", "path to the SSL Key file PEM for the cert")
 )
 
 func main() {
