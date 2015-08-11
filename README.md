@@ -4,12 +4,12 @@ what this provides.
 
 simplehttpsproxy sets X-Forwarded-For header on the request to the backend.
 
-$ go get github.com/yannk/simplehttpsproxy
-$ go install github.com/yannk/simplehttpsproxy
-$ simplehttpsproxy
+    $ go get github.com/yannk/simplehttpsproxy
+    $ go install github.com/yannk/simplehttpsproxy
+    $ simplehttpsproxy
 
-- or
+or -
 
-$ simplehttpsproxy -host=proxyhost.com -cert=cert.pem -key=key.pem -listen=localhost:4443 -backend:8080
+    $ simplehttpsproxy -host=proxyhost.com -cert=cert.pem -key=key.pem -listen=localhost:4443 -backend:8080
 
 See also https://github.com/yannk/simplehttpserver
